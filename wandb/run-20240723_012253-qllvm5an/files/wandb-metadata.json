@@ -1,0 +1,108 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-07-22T22:22:54.405162",
+    "startedAt": "2024-07-22T22:22:53.610497",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/mnt/d/PycharmProjects/openai/openai-env/training5.py",
+    "codePathLocal": "training5.py",
+    "codePath": "training5.py",
+    "git": {
+        "remote": "https://github.com/merfuradu/app-project-builder-with-ai-llm-llama3.git",
+        "commit": "27c2fa3ea7551130b07d74c288fbda7823779fb4"
+    },
+    "email": null,
+    "root": "/mnt/d/PycharmProjects/openai/openai-env",
+    "host": "DESKTOP-BSTPNR5",
+    "username": "merfu",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2688.0,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2688.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 29.435791015625
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 11.557792663574219
+    }
+}

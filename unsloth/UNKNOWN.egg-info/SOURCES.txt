@@ -1,0 +1,57 @@
+LICENSE
+README.md
+pyproject.toml
+unsloth-cli.py
+.github/FUNDING.yml
+UNKNOWN.egg-info/PKG-INFO
+UNKNOWN.egg-info/SOURCES.txt
+UNKNOWN.egg-info/dependency_links.txt
+UNKNOWN.egg-info/top_level.txt
+images/Assistant.png
+images/Colab.png
+images/Discord button.png
+images/Discord.png
+images/Free version button.png
+images/Kaggle.png
+images/Kofi button.png
+images/LAION 2GPU.png
+images/Merge.png
+images/Slim Orca 2GPUs.png
+images/Terminal_Type.png
+images/Where_Terminal.png
+images/buy me a coffee button.png
+images/made with unsloth.png
+images/ollama.png
+images/peft x trl button.png
+images/start free finetune button.png
+images/unsloth end.png
+images/unsloth loading page render.png
+images/unsloth logo black text.png
+images/unsloth logo only.png
+images/unsloth logo white text.png
+images/unsloth made with love.png
+images/unsloth new logo.png
+unsloth/__init__.py
+unsloth/chat_templates.py
+unsloth/save.py
+unsloth/tokenizer_utils.py
+unsloth/trainer.py
+unsloth/kernels/__init__.py
+unsloth/kernels/cross_entropy_loss.py
+unsloth/kernels/fast_lora.py
+unsloth/kernels/flex_attention.py
+unsloth/kernels/geglu.py
+unsloth/kernels/rms_layernorm.py
+unsloth/kernels/rope_embedding.py
+unsloth/kernels/swiglu.py
+unsloth/kernels/utils.py
+unsloth/models/__init__.py
+unsloth/models/_utils.py
+unsloth/models/dpo.py
+unsloth/models/gemma.py
+unsloth/models/gemma2.py
+unsloth/models/llama.py
+unsloth/models/loader.py
+unsloth/models/mapper.py
+unsloth/models/mistral.py
+unsloth/models/qwen2.py
