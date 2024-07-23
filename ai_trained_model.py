@@ -2,7 +2,7 @@ from langchain_community.llms import Ollama
 from crewai import Agent, Task, Crew, Process
 import wandb
 
-wandb.login()
+#wandb.login()
 
 OPENAI_API_BASE='http://localhost:11434'
 OPENAI_MODEL_NAME='llama3'  # Adjust based on available model
