@@ -2,13 +2,18 @@ from langchain_community.llms import Ollama
 from crewai import Agent, Task, Crew, Process
 import wandb
 
-#wandb.login()
+wandb.login()
 
-OPENAI_API_BASE='http://localhost:11434'
-OPENAI_MODEL_NAME='llama3'  # Adjust based on available model
-OPENAI_API_KEY='NA'
+# Initialize a new wandb run
+run = wandb.init(project="huggingface")
 
-# model_name = "D:\llama3\Meta-Llama-3-8B"
+# Specify the path to save the downloaded model
+save_path = "D:/PycharmProjects/openai/openai-env/artifacts/model2"
+
+# Restore the model artifacts from wandb
+artifact = run.use_artifact('merfuradu-ase/huggingface/model-hseq33ht:v0', type='model')
+artifact_dir = artifact.download(save_path)
+
 
 model = Ollama(
     model = "llama3",
@@ -36,3 +41,5 @@ crew = Crew(
 result = crew.kickoff()
 
 print(result)
+
+wandb.finish()

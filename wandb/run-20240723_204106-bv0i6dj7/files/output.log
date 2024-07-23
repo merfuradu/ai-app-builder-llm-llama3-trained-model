@@ -1,0 +1,55 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m project 'huggingface' not found under entity 'merfuradu'
+Traceback (most recent call last):
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 268, in _from_name
+    raise ValueError(f"project '{project}' not found under entity '{entity}'")
+ValueError: project 'huggingface' not found under entity 'merfuradu'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/mnt/d/PycharmProjects/openai/openai-env/ai_trained_model.py", line 14, in <module>
+    artifact = run.use_artifact('merfuradu/huggingface/model-hseq33ht:v0', type='model')
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2964, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 268, in _from_name
+    raise ValueError(f"project '{project}' not found under entity '{entity}'")
+wandb.errors.CommError: project 'huggingface' not found under entity 'merfuradu'
+Traceback (most recent call last):
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 268, in _from_name
+    raise ValueError(f"project '{project}' not found under entity '{entity}'")
+ValueError: project 'huggingface' not found under entity 'merfuradu'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/mnt/d/PycharmProjects/openai/openai-env/ai_trained_model.py", line 14, in <module>
+    artifact = run.use_artifact('merfuradu/huggingface/model-hseq33ht:v0', type='model')
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2964, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 268, in _from_name
+    raise ValueError(f"project '{project}' not found under entity '{entity}'")
+wandb.errors.CommError: project 'huggingface' not found under entity 'merfuradu'

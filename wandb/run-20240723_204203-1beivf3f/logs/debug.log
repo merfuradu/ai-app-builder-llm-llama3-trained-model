@@ -1,0 +1,34 @@
+2024-07-23 20:42:03,167 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-07-23 20:42:03,167 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Configure stats pid to 38292
+2024-07-23 20:42:03,167 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Loading settings from /home/merfu/.config/wandb/settings
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Loading settings from /mnt/d/PycharmProjects/openai/openai-env/wandb/settings
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'ai_trained_model.py', 'program_abspath': '/mnt/d/PycharmProjects/openai/openai-env/ai_trained_model.py', 'program': '/mnt/d/PycharmProjects/openai/openai-env/ai_trained_model.py'}
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-23 20:42:03,168 INFO    MainThread:38292 [wandb_init.py:_log_setup():529] Logging user logs to /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/logs/debug.log
+2024-07-23 20:42:03,169 INFO    MainThread:38292 [wandb_init.py:_log_setup():530] Logging internal logs to /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/logs/debug-internal.log
+2024-07-23 20:42:03,169 INFO    MainThread:38292 [wandb_init.py:init():569] calling init triggers
+2024-07-23 20:42:03,169 INFO    MainThread:38292 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-23 20:42:03,169 INFO    MainThread:38292 [wandb_init.py:init():619] starting backend
+2024-07-23 20:42:03,169 INFO    MainThread:38292 [wandb_init.py:init():623] setting up manager
+2024-07-23 20:42:03,172 INFO    MainThread:38292 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-23 20:42:03,173 INFO    MainThread:38292 [wandb_init.py:init():631] backend started and connected
+2024-07-23 20:42:03,179 INFO    MainThread:38292 [wandb_init.py:init():720] updated telemetry
+2024-07-23 20:42:03,223 INFO    MainThread:38292 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-23 20:42:03,669 INFO    MainThread:38292 [wandb_run.py:_on_init():2435] communicating current version
+2024-07-23 20:42:03,855 INFO    MainThread:38292 [wandb_run.py:_on_init():2444] got version response 
+2024-07-23 20:42:03,855 INFO    MainThread:38292 [wandb_init.py:init():804] starting run threads in backend
+2024-07-23 20:42:05,384 INFO    MainThread:38292 [wandb_run.py:_console_start():2413] atexit reg
+2024-07-23 20:42:05,385 INFO    MainThread:38292 [wandb_run.py:_redirect():2255] redirect: wrap_raw
+2024-07-23 20:42:05,385 INFO    MainThread:38292 [wandb_run.py:_redirect():2320] Wrapping output streams.
+2024-07-23 20:42:05,385 INFO    MainThread:38292 [wandb_run.py:_redirect():2345] Redirects installed.
+2024-07-23 20:42:05,387 INFO    MainThread:38292 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-23 20:45:58,439 INFO    MainThread:38292 [wandb_run.py:_finish():2107] finishing run merfuradu-ase/huggingface/1beivf3f
+2024-07-23 20:45:58,439 INFO    MainThread:38292 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2024-07-23 20:45:58,440 INFO    MainThread:38292 [wandb_run.py:_restore():2352] restore
+2024-07-23 20:45:58,440 INFO    MainThread:38292 [wandb_run.py:_restore():2358] restore done
+2024-07-23 20:46:05,933 INFO    MainThread:38292 [wandb_run.py:_footer_history_summary_info():4016] rendering history
+2024-07-23 20:46:05,933 INFO    MainThread:38292 [wandb_run.py:_footer_history_summary_info():4048] rendering summary
+2024-07-23 20:46:05,940 INFO    MainThread:38292 [wandb_run.py:_footer_sync_info():3975] logging synced files

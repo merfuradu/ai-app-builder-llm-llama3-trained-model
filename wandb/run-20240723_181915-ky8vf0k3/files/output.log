@@ -1,0 +1,79 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Permission denied to access merfuradu-ase/openai-env/ky8vf0k3
+Traceback (most recent call last):
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/merfu/.local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/mnt/d/PycharmProjects/openai/openai-env/download_trained_model.py", line 8, in <module>
+    artifact = wandb.use_artifact('model-hseq33ht:v0', type='model')
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2964, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 258, in _from_name
+    response = client.execute(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/util.py", line 908, in no_retry_auth
+    raise CommError(f"Permission denied to access {wandb.run.path}")
+wandb.errors.CommError: Permission denied to access merfuradu-ase/openai-env/ky8vf0k3
+Traceback (most recent call last):
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/merfu/.local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/mnt/d/PycharmProjects/openai/openai-env/download_trained_model.py", line 8, in <module>
+    artifact = wandb.use_artifact('model-hseq33ht:v0', type='model')
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2964, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/apis/public/api.py", line 1034, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 258, in _from_name
+    response = client.execute(
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/merfu/.local/lib/python3.10/site-packages/wandb/util.py", line 908, in no_retry_auth
+    raise CommError(f"Permission denied to access {wandb.run.path}")
+wandb.errors.CommError: Permission denied to access merfuradu-ase/openai-env/ky8vf0k3

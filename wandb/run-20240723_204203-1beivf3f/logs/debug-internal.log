@@ -1,0 +1,642 @@
+2024-07-23 20:42:03,174 INFO    StreamThr :38333 [internal.py:wandb_internal():85] W&B internal server running at pid: 38333, started at: 2024-07-23 20:42:03.173025
+2024-07-23 20:42:03,175 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status
+2024-07-23 20:42:03,179 INFO    WriterThread:38333 [datastore.py:open_for_write():87] open: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/run-1beivf3f.wandb
+2024-07-23 20:42:03,181 DEBUG   SenderThread:38333 [sender.py:send():379] send: header
+2024-07-23 20:42:03,224 DEBUG   SenderThread:38333 [sender.py:send():379] send: run
+2024-07-23 20:42:03,662 INFO    SenderThread:38333 [dir_watcher.py:__init__():211] watching files in: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files
+2024-07-23 20:42:03,663 INFO    SenderThread:38333 [sender.py:_start_run_threads():1188] run started: 1beivf3f with start time 1721756523.174078
+2024-07-23 20:42:03,669 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: check_version
+2024-07-23 20:42:03,669 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: check_version
+2024-07-23 20:42:03,861 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: run_start
+2024-07-23 20:42:05,109 DEBUG   HandlerThread:38333 [system_info.py:__init__():26] System info init
+2024-07-23 20:42:05,109 DEBUG   HandlerThread:38333 [system_info.py:__init__():41] System info init done
+2024-07-23 20:42:05,110 INFO    HandlerThread:38333 [system_monitor.py:start():194] Starting system monitor
+2024-07-23 20:42:05,110 INFO    SystemMonitor:38333 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-23 20:42:05,110 INFO    HandlerThread:38333 [system_monitor.py:probe():214] Collecting system info
+2024-07-23 20:42:05,111 INFO    SystemMonitor:38333 [interfaces.py:start():188] Started cpu monitoring
+2024-07-23 20:42:05,111 INFO    SystemMonitor:38333 [interfaces.py:start():188] Started disk monitoring
+2024-07-23 20:42:05,113 INFO    SystemMonitor:38333 [interfaces.py:start():188] Started gpu monitoring
+2024-07-23 20:42:05,114 INFO    SystemMonitor:38333 [interfaces.py:start():188] Started memory monitoring
+2024-07-23 20:42:05,115 INFO    SystemMonitor:38333 [interfaces.py:start():188] Started network monitoring
+2024-07-23 20:42:05,126 DEBUG   HandlerThread:38333 [system_info.py:probe():152] Probing system
+2024-07-23 20:42:05,175 DEBUG   HandlerThread:38333 [system_info.py:_probe_git():137] Probing git
+2024-07-23 20:42:05,218 DEBUG   HandlerThread:38333 [system_info.py:_probe_git():145] Probing git done
+2024-07-23 20:42:05,219 DEBUG   HandlerThread:38333 [system_info.py:probe():200] Probing system done
+2024-07-23 20:42:05,219 DEBUG   HandlerThread:38333 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-07-23T17:42:05.126201', 'startedAt': '2024-07-23T17:42:03.150155', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/d/PycharmProjects/openai/openai-env/ai_trained_model.py', 'codePathLocal': 'ai_trained_model.py', 'codePath': 'ai_trained_model.py', 'git': {'remote': 'https://github.com/merfuradu/ai-app-builder-llm-llama3-trained-model.git', 'commit': 'dfe2b40d98695ef479c053d29152e96088a9b35d'}, 'email': None, 'root': '/mnt/d/PycharmProjects/openai/openai-env', 'host': 'DESKTOP-BSTPNR5', 'username': 'merfu', 'executable': '/usr/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2688.001, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}, {'current': 2688.001, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 29.90906524658203}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 11.557796478271484}}
+2024-07-23 20:42:05,219 INFO    HandlerThread:38333 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-23 20:42:05,219 INFO    HandlerThread:38333 [system_monitor.py:probe():227] Publishing system info
+2024-07-23 20:42:05,221 INFO    HandlerThread:38333 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-23 20:42:05,224 DEBUG   SenderThread:38333 [sender.py:send():379] send: files
+2024-07-23 20:42:05,224 INFO    SenderThread:38333 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-23 20:42:05,383 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-23 20:42:05,383 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: python_packages
+2024-07-23 20:42:05,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:42:05,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:05,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:42:05,598 DEBUG   SenderThread:38333 [sender.py:send():379] send: telemetry
+2024-07-23 20:42:05,671 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/wandb-metadata.json
+2024-07-23 20:42:05,672 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/requirements.txt
+2024-07-23 20:42:05,898 INFO    wandb-upload_0:38333 [upload_job.py:push():130] Uploaded file /tmp/tmppz_i92jywandb/hdjahhqg-wandb-metadata.json
+2024-07-23 20:42:06,235 DEBUG   SenderThread:38333 [sender.py:send():379] send: use_artifact
+2024-07-23 20:42:06,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:07,142 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:07,143 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:07,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:07,679 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:42:08,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:09,056 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:09,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:09,584 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:09,585 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:09,688 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:42:10,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:11,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:12,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:13,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:14,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:14,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:15,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:16,034 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:16,034 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:16,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:17,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:18,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:18,477 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:18,477 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:19,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:19,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:20,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:42:20,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:42:20,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:20,919 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:20,919 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:21,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:22,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:23,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:24,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:24,571 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:25,366 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:25,366 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:25,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:26,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:27,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:27,810 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:27,810 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:28,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:29,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:30,252 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:30,253 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:30,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:30,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:31,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:32,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:32,695 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:32,695 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:33,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:34,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:35,139 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:35,139 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:35,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:42:35,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:42:35,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:35,641 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:36,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:36,796 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/config.yaml
+2024-07-23 20:42:37,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:38,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:39,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:39,593 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:39,594 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:40,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:41,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:41,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:42,037 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:42,038 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:42,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:43,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:44,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:45,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:46,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:46,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:46,484 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:46,485 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:47,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:48,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:49,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:50,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:42:50,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:42:50,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:50,930 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:50,931 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:51,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:51,654 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:52,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:53,375 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:53,376 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:53,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:54,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:55,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:56,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:57,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:42:57,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:57,822 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:57,822 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:42:58,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:42:59,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:00,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:01,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:02,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:03,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:03,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:04,270 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:04,271 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:04,395 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:05,115 DEBUG   SystemMonitor:38333 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-23 20:43:05,117 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:43:05,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:43:05,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:43:05,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:06,395 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:06,744 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:06,745 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:07,395 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:08,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:08,607 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:09,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:10,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:11,190 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:11,190 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:11,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:12,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:13,396 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:14,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:14,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:15,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:15,651 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:15,651 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:16,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:17,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:18,098 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:18,098 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:18,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:19,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:19,397 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:20,384 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:43:20,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:43:20,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:20,541 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:20,541 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:21,398 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:22,398 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:22,985 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:22,986 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:23,398 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:24,399 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:24,635 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:25,399 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:25,472 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:25,473 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:26,399 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:26,976 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:43:27,399 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:27,938 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:27,939 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:28,399 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:29,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:30,382 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:30,383 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:30,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:30,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:31,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:32,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:33,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:34,400 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:34,828 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:34,829 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:35,117 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:43:35,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:43:35,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:43:35,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:35,637 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:36,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:37,273 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:37,273 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:37,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:38,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:39,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:39,720 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:39,721 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:40,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:41,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:41,401 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:42,165 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:42,166 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:42,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:43,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:44,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:44,611 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:44,612 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:45,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:46,388 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:46,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:47,402 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:48,403 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:49,066 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:49,066 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:49,403 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:50,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:43:50,385 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:43:50,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:51,403 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:51,510 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:51,511 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:51,627 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:52,403 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:53,403 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:53,956 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:53,957 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:54,404 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:55,404 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:56,404 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:56,406 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:56,406 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:43:57,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:43:57,404 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:58,405 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:43:59,405 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:00,405 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:00,859 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:00,859 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:01,405 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:02,389 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:02,405 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:03,309 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:03,310 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:03,406 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:04,406 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:05,118 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:44:05,385 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:44:05,386 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:44:05,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:06,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:07,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:07,625 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:07,763 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:07,764 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:08,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:09,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:10,215 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:10,216 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:10,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:11,408 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:12,407 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:12,666 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:12,666 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:13,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:13,408 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:14,408 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:15,116 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:15,117 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:15,408 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:16,408 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:17,409 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:17,565 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:17,566 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:18,409 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:19,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:19,409 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:20,017 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:20,018 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:20,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:44:20,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:44:20,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:21,409 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:22,409 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:22,468 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:22,469 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:23,410 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:24,410 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:24,645 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:24,927 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:24,928 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:25,410 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:26,410 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:27,411 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:28,410 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:29,381 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:29,382 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:29,411 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:30,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:30,411 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:31,411 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:31,831 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:31,832 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:32,411 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:33,412 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:34,278 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:34,279 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:34,412 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:35,119 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:44:35,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:44:35,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:44:35,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:35,653 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:36,412 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:36,729 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:36,730 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:37,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:38,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:39,177 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:39,178 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:39,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:40,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:41,390 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:41,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:42,413 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:43,414 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:43,628 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:43,628 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:44,414 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:45,414 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:46,078 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:46,079 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:46,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:46,415 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:47,415 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:48,415 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:49,415 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:50,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:44:50,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:44:50,440 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:50,531 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:50,532 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:51,416 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:51,641 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:52,416 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:52,980 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:52,981 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:53,416 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:54,416 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:55,416 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:56,417 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:57,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:44:57,417 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:58,417 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:59,417 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:44:59,447 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:44:59,447 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:00,417 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:01,418 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:01,936 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:01,936 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:02,391 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:02,418 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:03,418 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:04,386 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:04,387 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:04,418 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:05,120 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:45:05,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:45:05,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:45:05,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:06,419 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:06,842 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:06,843 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:07,419 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:07,649 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:08,419 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:09,293 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:09,294 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:09,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:10,419 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:11,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:12,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:13,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:13,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:14,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:15,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:15,823 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:15,825 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:16,420 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:17,421 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:18,311 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:18,312 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:18,421 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:19,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:19,421 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:20,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:45:20,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:45:20,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:21,421 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:22,421 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:22,764 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:22,765 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:23,422 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:24,422 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:24,649 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:25,210 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:25,211 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:25,422 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:26,422 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:27,423 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:28,423 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:29,423 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:29,666 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:29,667 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:30,392 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:30,423 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:31,424 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:32,118 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:32,119 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:32,424 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:33,424 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:34,424 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:35,121 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:45:35,386 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:45:35,387 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:45:35,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:35,600 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:36,425 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:36,575 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:36,575 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:37,425 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:38,425 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:39,425 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:40,425 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:41,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:41,426 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:42,426 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:43,032 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:43,032 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:43,426 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:44,426 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:45,426 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:45,511 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:45,511 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:46,427 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:47,393 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:47,427 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:47,962 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:47,962 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:48,427 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:49,427 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:50,387 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-23 20:45:50,388 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: stop_status
+2024-07-23 20:45:50,415 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:50,416 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:50,430 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:51,428 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:52,428 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:52,670 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:52,864 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:52,865 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:53,428 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:54,428 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:55,315 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:55,315 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:55,428 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:56,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:57,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:57,764 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:57,765 ERROR   gpu       :38333 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-07-23 20:45:58,394 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:58,429 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:45:58,489 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: server_info
+2024-07-23 20:45:58,490 DEBUG   SenderThread:38333 [sender.py:send():379] send: telemetry
+2024-07-23 20:45:58,491 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: server_info
+2024-07-23 20:45:58,654 DEBUG   SenderThread:38333 [sender.py:send():379] send: exit
+2024-07-23 20:45:58,654 INFO    SenderThread:38333 [sender.py:send_exit():586] handling exit code: 0
+2024-07-23 20:45:58,655 INFO    SenderThread:38333 [sender.py:send_exit():588] handling runtime: 234
+2024-07-23 20:45:58,657 INFO    SenderThread:38333 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-23 20:45:58,658 INFO    SenderThread:38333 [sender.py:send_exit():594] send defer
+2024-07-23 20:45:58,658 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,659 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-23 20:45:58,659 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,659 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-23 20:45:58,659 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 1
+2024-07-23 20:45:58,660 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,660 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-23 20:45:58,660 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,660 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-23 20:45:58,660 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 2
+2024-07-23 20:45:58,660 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,661 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-23 20:45:58,661 INFO    HandlerThread:38333 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-23 20:45:58,661 DEBUG   SystemMonitor:38333 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-23 20:45:58,661 DEBUG   SystemMonitor:38333 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-23 20:45:58,662 INFO    HandlerThread:38333 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-23 20:45:58,663 INFO    HandlerThread:38333 [interfaces.py:finish():200] Joined disk monitor
+2024-07-23 20:45:58,667 INFO    HandlerThread:38333 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-23 20:45:58,668 INFO    HandlerThread:38333 [interfaces.py:finish():200] Joined memory monitor
+2024-07-23 20:45:58,668 INFO    HandlerThread:38333 [interfaces.py:finish():200] Joined network monitor
+2024-07-23 20:45:58,668 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,669 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-23 20:45:58,669 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 3
+2024-07-23 20:45:58,669 DEBUG   SenderThread:38333 [sender.py:send():379] send: stats
+2024-07-23 20:45:58,669 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,670 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-23 20:45:58,670 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,670 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-23 20:45:58,670 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 4
+2024-07-23 20:45:58,670 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,670 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-23 20:45:58,671 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,671 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-23 20:45:58,671 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 5
+2024-07-23 20:45:58,671 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,671 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-23 20:45:58,672 DEBUG   SenderThread:38333 [sender.py:send():379] send: summary
+2024-07-23 20:45:58,673 INFO    SenderThread:38333 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-23 20:45:58,673 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,674 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-23 20:45:58,674 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 6
+2024-07-23 20:45:58,674 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,674 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-23 20:45:58,674 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,674 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-23 20:45:58,677 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: status_report
+2024-07-23 20:45:58,856 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 7
+2024-07-23 20:45:58,857 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:45:58,857 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-23 20:45:58,857 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:45:58,857 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-23 20:45:59,480 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:45:59,481 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/config.yaml
+2024-07-23 20:45:59,481 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/wandb-summary.json
+2024-07-23 20:45:59,654 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-23 20:46:00,959 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 8
+2024-07-23 20:46:00,960 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: poll_exit
+2024-07-23 20:46:00,960 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:00,960 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-23 20:46:00,961 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:00,961 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-23 20:46:00,961 INFO    SenderThread:38333 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-23 20:46:00,964 INFO    SenderThread:38333 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-23 20:46:00,978 INFO    SenderThread:38333 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-23 20:46:00,988 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 9
+2024-07-23 20:46:00,989 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:00,989 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-23 20:46:00,990 DEBUG   SenderThread:38333 [sender.py:send():379] send: artifact
+2024-07-23 20:46:01,490 INFO    Thread-12 :38333 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:46:01,655 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-23 20:46:03,188 INFO    SenderThread:38333 [sender.py:send_artifact():1537] sent artifact job-https___github.com_merfuradu_ai-app-builder-llm-llama3-trained-model.git_ai_trained_model.py - {'id': 'QXJ0aWZhY3Q6MTAyNjExNTAyMg==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMxMjcxMTYzMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAyNjExNTAyMg==', 'versionIndex': 0}}}
+2024-07-23 20:46:03,189 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:03,189 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-23 20:46:03,189 INFO    SenderThread:38333 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-23 20:46:03,496 INFO    SenderThread:38333 [dir_watcher.py:finish():388] scan: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files
+2024-07-23 20:46:03,498 INFO    SenderThread:38333 [dir_watcher.py:finish():402] scan save: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/config.yaml config.yaml
+2024-07-23 20:46:03,501 INFO    SenderThread:38333 [dir_watcher.py:finish():402] scan save: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log output.log
+2024-07-23 20:46:03,504 INFO    SenderThread:38333 [dir_watcher.py:finish():402] scan save: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/requirements.txt requirements.txt
+2024-07-23 20:46:03,508 INFO    SenderThread:38333 [dir_watcher.py:finish():402] scan save: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/wandb-metadata.json wandb-metadata.json
+2024-07-23 20:46:03,508 INFO    SenderThread:38333 [dir_watcher.py:finish():402] scan save: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/wandb-summary.json wandb-summary.json
+2024-07-23 20:46:03,512 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 10
+2024-07-23 20:46:03,512 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: poll_exit
+2024-07-23 20:46:03,512 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:03,512 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-23 20:46:03,514 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:03,514 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-23 20:46:03,514 INFO    SenderThread:38333 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-23 20:46:03,655 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-23 20:46:03,656 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: poll_exit
+2024-07-23 20:46:03,917 INFO    wandb-upload_0:38333 [upload_job.py:push():130] Uploaded file /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/config.yaml
+2024-07-23 20:46:04,025 INFO    wandb-upload_1:38333 [upload_job.py:push():130] Uploaded file /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/output.log
+2024-07-23 20:46:04,063 INFO    wandb-upload_3:38333 [upload_job.py:push():130] Uploaded file /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/wandb-summary.json
+2024-07-23 20:46:04,174 INFO    wandb-upload_2:38333 [upload_job.py:push():130] Uploaded file /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/files/requirements.txt
+2024-07-23 20:46:04,375 INFO    Thread-11 (_thread_body):38333 [sender.py:transition_state():614] send defer: 11
+2024-07-23 20:46:04,376 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:04,376 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-23 20:46:04,377 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:04,377 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-23 20:46:04,377 INFO    SenderThread:38333 [file_pusher.py:join():175] waiting for file pusher
+2024-07-23 20:46:04,378 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 12
+2024-07-23 20:46:04,378 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:04,378 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-23 20:46:04,379 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:04,379 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-23 20:46:04,379 INFO    SenderThread:38333 [file_stream.py:finish():601] file stream finish called
+2024-07-23 20:46:04,656 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-23 20:46:04,923 INFO    SenderThread:38333 [file_stream.py:finish():605] file stream finish is done
+2024-07-23 20:46:04,924 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 13
+2024-07-23 20:46:04,924 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: poll_exit
+2024-07-23 20:46:04,924 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:04,925 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-23 20:46:04,926 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:04,926 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-23 20:46:04,926 INFO    SenderThread:38333 [sender.py:transition_state():614] send defer: 14
+2024-07-23 20:46:04,927 DEBUG   SenderThread:38333 [sender.py:send():379] send: final
+2024-07-23 20:46:04,927 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: defer
+2024-07-23 20:46:04,927 DEBUG   SenderThread:38333 [sender.py:send():379] send: footer
+2024-07-23 20:46:04,927 INFO    HandlerThread:38333 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-23 20:46:04,928 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: defer
+2024-07-23 20:46:04,928 INFO    SenderThread:38333 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-23 20:46:04,929 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-23 20:46:04,929 DEBUG   SenderThread:38333 [sender.py:send_request():406] send_request: poll_exit
+2024-07-23 20:46:04,930 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-23 20:46:04,931 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-23 20:46:04,931 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-23 20:46:04,931 DEBUG   HandlerThread:38333 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-23 20:46:04,932 INFO    HandlerThread:38333 [handler.py:finish():882] shutting down handler
+2024-07-23 20:46:05,929 INFO    WriterThread:38333 [datastore.py:close():296] close: /mnt/d/PycharmProjects/openai/openai-env/wandb/run-20240723_204203-1beivf3f/run-1beivf3f.wandb
+2024-07-23 20:46:05,929 INFO    SenderThread:38333 [sender.py:finish():1615] shutting down sender
+2024-07-23 20:46:05,930 INFO    SenderThread:38333 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-23 20:46:05,931 INFO    SenderThread:38333 [file_pusher.py:join():175] waiting for file pusher
