@@ -1,6 +1,4 @@
 ﻿# app-project-builder-with-ai-llm-llama3
-Sigur, iată un fișier README detaliat pentru proiectul tău:
-
 ---
 
 # Proiect de Dezvoltare și Antrenare Model AI
@@ -90,12 +88,12 @@ from transformers import FalconForCausalLM, AutoTokenizer, BitsAndBytesConfig, A
 from peft import LoraConfig, get_peft_model
 from transformers import TrainingArguments
 from trl import SFTTrainer, SFTConfig
-
+from dotenv import load_dotenv
 torch.cuda.empty_cache()
 
 dataset = load_dataset("merfuradu/appbuilder", split='train')
 
-token = "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"
+token = os.getenv("HUGGING_FACE_TOKEN")
 login(token=token)
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", trust_remote_code=True)
@@ -202,7 +200,8 @@ from huggingface_hub import login
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
 from datasets import load_dataset
 
-token = "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"
+
+token = "HUGGING_FACE_TOKEN"
 login(token=token)
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", trust_remote_code=True)
@@ -268,7 +267,7 @@ except Exception as e:
 
 ## Note
 
-- **Token de Autentificare**: Asigurați-vă că înlocuiți token-ul `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` cu token-ul vostru Hugging Face pentru a accesa resursele necesare.
+- **Token de Autentificare**: Asigurați-vă că înlocuiți token-ul `HUGGING_FACE_TOKEN` cu token-ul vostru Hugging Face pentru a accesa resursele necesare.
 - **Configurări Specifice**: Configurările pentru antrenare pot fi ajustate în funcție de resursele hardware disponibile.
 
 ---
