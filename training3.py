@@ -3,7 +3,7 @@ from huggingface_hub import login
 import torch
 import os
 from transformers import FalconForCausalLM, AutoTokenizer, BitsAndBytesConfig, AutoTokenizer, AutoModelForCausalLM
-
+from dotenv import load_dotenv
 # dataset_name = "openai-env/dataset.json"
 
 # if not os.path.isfile(file_path):
@@ -12,7 +12,7 @@ from transformers import FalconForCausalLM, AutoTokenizer, BitsAndBytesConfig, A
 dataset = load_dataset("merfuradu/appbuilder", split='train')
 print(dataset['examples'])
 
-token = "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"
+token = os.getenv("HUGGING_FACE_TOKEN")
 login(token=token)
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", trust_remote_code=True)
 tokenizer.pad_token = tokenizer.eos_token

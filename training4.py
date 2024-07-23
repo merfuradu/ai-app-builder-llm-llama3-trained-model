@@ -6,11 +6,12 @@ from huggingface_hub import login
 import torch
 import os
 from transformers import FalconForCausalLM, AutoTokenizer, BitsAndBytesConfig, AutoTokenizer, AutoModelForCausalLM
+from dotenv import load_dotenv
 # Load dataset
 dataset = load_dataset("merfuradu/appbuilder", split='train')
 
 # Login to Hugging Face Hub
-token = "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"
+token = os.getenv("HUGGING_FACE_TOKEN")
 login(token=token)
 
 # Load tokenizer
