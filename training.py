@@ -1,14 +1,16 @@
+import os
 
 from huggingface_hub import login, notebook_login
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
 from datasets import load_dataset
+from dotenv import load_dotenv
 
 
 # Set logging level
 # logging.basicConfig(level=logging.DEBUG)
 # transformers.utils.logging.set_verbosity_debug()
 
-token = "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"
+token = os.getenv("HUGGING_FACE_TOKEN")
 login(token=token)
 #transformers.utils.logging.set_verbosity_error()
 
