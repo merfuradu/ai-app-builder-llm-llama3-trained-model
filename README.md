@@ -3,14 +3,22 @@
 
 # Proiect de Dezvoltare și Antrenare Model AI
 
-Acest proiect are ca scop dezvoltarea și antrenarea unui model de inteligență artificială pentru generarea de oferte detaliate de proiecte, utilizând tehnologiile disponibile pe platforma Hugging Face și altele. Proiectul include două scripturi principale care se ocupă de antrenarea și utilizarea modelului AI. 
+Acest proiect se concentrează pe dezvoltarea și antrenarea unui model de inteligență artificială pentru generarea de oferte detaliate de proiecte. Modelul utilizat este un LLM (Large Language Model) bazat pe Llama3, un model open-source dezvoltat de Meta. Proiectul integrează tehnologiile disponibile pe platforma Hugging Face și alte unelte relevante pentru a crea și gestiona acest model AI.
 
-## Tehnologii Utilizate
+Tehnologii Utilizate
+1. Llama3
+Modelul de limbaj Llama3, dezvoltat de Meta, este folosit pentru a genera texte coerente și relevante bazate pe input-ul utilizatorului. Llama3 este open-source, ceea ce permite utilizatorilor să-l ruleze local și să-l personalizeze în funcție de nevoile specifice ale proiectului. Modelul este rulabil pe o mașină locală, asigurând flexibilitate și control asupra procesului de antrenare și inferență.
 
-- **LangChain Community (Ollama)**: Utilizat pentru gestionarea și utilizarea modelului AI.
+2. Hugging Face
+Platforma Hugging Face este utilizată pentru a gestiona și antrena modelul. Hugging Face Hub oferă acces la modele pre-antrenate și suport pentru antrenare personalizată. În cadrul acestui proiect, Hugging Face este folosit pentru a prelua dataset-uri, a tokeniza datele și a antrena modelul.
+
+3. Python și Biblioteca transformers
+Proiectul folosește Python pentru implementarea scripturilor de antrenare și generare a textelor. Biblioteca transformers este utilizată pentru manipularea modelului și gestionarea antrenamentului acestuia.
+
+4. WandB
+WandB (Weights & Biases) este folosit pentru a monitoriza și vizualiza procesul de antrenare a modelului. Aceasta permite urmărirea metricilor și gestionarea artefactelor modelului într-un mod organizat.
+
 - **CrewAI**: Utilizat pentru gestionarea agenților și sarcinilor în cadrul proiectului.
-- **WandB**: Folosit pentru monitorizarea și salvarea artefactelor modelului.
-- **Hugging Face Transformers**: Utilizat pentru gestionarea și antrenarea modelului AI.
 - **PyTorch**: Utilizat pentru procesarea și antrenarea modelului AI.
 - **Datasets**: Utilizat pentru gestionarea și prelucrarea seturilor de date.
 
