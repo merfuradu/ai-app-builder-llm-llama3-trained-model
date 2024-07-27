@@ -1,5 +1,7 @@
 from huggingface_hub import HfApi, HfFolder, Repository, create_repo
 import os
+from dotenv import load_dotenv
+
 
 # Define your Hugging Face username and repository name
 username = "merfuradu"
@@ -10,7 +12,7 @@ model_dir = "D:/PycharmProjects/openai/openai-env/artifacts/model-hseq33ht-v0"
 
 # Create a repository on Hugging Face (if it doesn't already exist)
 api = HfApi()
-token = "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"
+token = "HUGGING_FACE_TOKEN"
 repo_id = f"{username}/{repo_name}"
 create_repo(repo_id, exist_ok=True)
 
