@@ -18,6 +18,7 @@ Proiectul folosește Python pentru implementarea scripturilor de antrenare și g
 4. WandB
 WandB (Weights & Biases) este folosit pentru a monitoriza și vizualiza procesul de antrenare a modelului. Aceasta permite urmărirea metricilor și gestionarea artefactelor modelului într-un mod organizat.
 
+- **CustomTkinter**: Bibliotecă pentru crearea interfețelor grafice.
 - **CrewAI**: Utilizat pentru gestionarea agenților și sarcinilor în cadrul proiectului.
 - **PyTorch**: Utilizat pentru procesarea și antrenarea modelului AI.
 - **Datasets**: Utilizat pentru gestionarea și prelucrarea seturilor de date.
@@ -41,43 +42,131 @@ from crewai import Agent, Task, Crew, Process
 import wandb
 
 wandb.login()
+
+# Initialize a new wandb run
 run = wandb.init(project="huggingface")
+
+# Specify the path to save the downloaded model
 save_path = "D:/PycharmProjects/openai/openai-env/artifacts/model2"
+
+# Restore the model artifacts from wandb
 artifact = run.use_artifact('merfuradu-ase/huggingface/model-hseq33ht:v0', type='model')
 artifact_dir = artifact.download(save_path)
 
-model = Ollama(model="llama3", base_url="http://localhost:11434")
 
-professor_agent = Agent(
-    role="Consultant în Dezvoltare Aplicații",
-    goal="""Furnizați propuneri detaliate pentru proiecte clienților, bazate pe cerințele specifice ale acestora, inclusiv tehnologia necesară, limbajele de programare, timpul estimat de dezvoltare și estimările de costuri. În propunere, trebuie să includeți un plan detaliat care să acopere etapele esențiale ale proiectului, și să oferiți estimări exacte pentru costuri și ore de muncă. Toate informațiile trebuie să fie prezentate în limba română, într-un format profesional și clar.""",
-    backstory="""Sunteți un consultant experimentat în dezvoltarea aplicațiilor, specializat în crearea de propuneri cuprinzătoare pentru diverse tipuri de aplicații. Aveți competențe avansate în evaluarea cerințelor clienților și în elaborarea unor estimări precise pentru costuri și timp de dezvoltare, și sunteți capabil să redați toate informațiile într-un format bine structurat și în limba română.""",
-    allow_delegation=False,
-    verbose=True,
-    llm=model
-)
+model = Ollama(
+    model = "llama3",
+    base_url = "http://localhost:11434")
 
-client_request = input("Solicitarea clientului: ")
+professor_agent = Agent(role = "Consultant în Dezvoltare Aplicații",
+                      goal = """Furnizați propuneri detaliate pentru proiecte clienților, bazate pe cerințele specifice ale acestora, inclusiv tehnologia necesară, limbajele de programare, timpul estimat de dezvoltare și estimările de costuri. În propunere, trebuie să includeți un plan detaliat care să acopere etapele esențiale ale proiectului, și să oferiți estimări exacte pentru costuri și ore de muncă. Toate informațiile trebuie să fie prezentate în limba română, într-un format profesional și clar.""",
+                      backstory = """Sunteți un consultant experimentat în dezvoltarea aplicațiilor, specializat în crearea de propuneri cuprinzătoare pentru diverse tipuri de aplicații. Aveți competențe avansate în evaluarea cerințelor clienților și în elaborarea unor estimări precise pentru costuri și timp de dezvoltare, și sunteți capabil să redați toate informațiile într-un format bine structurat și în limba română.""",
+                      allow_delegation = False,
+                      verbose = True,
+                      llm = model)
 
-task1 = Task(
-    description=client_request,
-    agent=professor_agent,
-    expected_output="Această ofertă preliminară trebuie să includă următoarele informații: 1. Introducere și Context: O scurtă introducere care explică că oferta se bazează pe informațiile furnizate și că înainte de a începe dezvoltarea aplicației este necesară parcurgerea unor etape de planificare esențiale. 2. Etape de Planificare: Diagramă Logică: Descrie procesul de creare a unei diagrame logice pentru arhitectura aplicației. Menționează că această etapă definește structura și fluxul de date al aplicației. Diagramă ER: Explică realizarea unei diagrame entitate-relație (ER) pentru a structura baza de date. Sublinează importanța acestei diagrame în organizarea și gestionarea datelor. Design în Figma: Precizează că se va crea un design inițial în Figma pentru a clarifica aspectul și funcționalitatea interfeței utilizatorului. 3. Costuri și Contract: Diagrama Logică și ER: Costul estimat și TVA-ul pentru aceste documente. Design în Figma: Costul estimat și TVA-ul pentru designul interfeței. Contract și Plată: Menționează că înainte de a începe dezvoltarea, va trebui să fie semnat un contract și să fie achitată suma în avans pentru etapele de planificare. 4. Estimare Finală: Oferta Finală: Clarifică că oferta finală va fi ajustată pe baza etapei de planificare, și că aceasta include costuri și timp de livrare definite după finalizarea planificării. 5. Funcționalități Incluse: Gestionarea Mașinilor: Descrie cum vor fi gestionate și monitorizate mașinile utilizatorilor în aplicație. Notificări și Rapoarte: Detaliază sistemul de notificări pentru expirarea ITP-ului și generarea de rapoarte detaliate pentru erorile mașinii. Facturare și Plată: Explică cum se va gestiona generarea facturilor și opțiunile de plată disponibile. 6. Estimare de Cost și Timp: Cost Total: Estimarea costului total pentru dezvoltarea aplicației, inclusiv TVA. Timp de Livrare: Estimarea timpului necesar pentru finalizarea dezvoltării, bazat pe complexitatea funcționalităților și resursele disponibile. Această ofertă este orientativă și poate fi ajustată în funcție de cerințele suplimentare sau modificările de specificație. Timpul și costurile finale vor fi stabilite în urma finalizării etapei de planificare."""
-)
+def generate_proposal(client_request):
+    task1 = Task(description=client_request,
+                agent = professor_agent,
+                expected_output="Această ofertă preliminară trebuie să includă următoarele informații: 1. Introducere și Context: O scurtă introducere care explică că oferta se bazează pe informațiile furnizate și că înainte de a începe dezvoltarea aplicației este necesară parcurgerea unor etape de planificare esențiale. 2. Etape de Planificare: Diagramă Logică: Descrie procesul de creare a unei diagrame logice pentru arhitectura aplicației. Menționează că această etapă definește structura și fluxul de date al aplicației. Diagramă ER: Explică realizarea unei diagrame entitate-relație (ER) pentru a structura baza de date. Sublinează importanța acestei diagrame în organizarea și gestionarea datelor. Design în Figma: Precizează că se va crea un design inițial în Figma pentru a clarifica aspectul și funcționalitatea interfeței utilizatorului. 3. Costuri și Contract: Diagrama Logică și ER: Costul estimat și TVA-ul pentru aceste documente. Design în Figma: Costul estimat și TVA-ul pentru designul interfeței. Contract și Plată: Menționează că înainte de a începe dezvoltarea, va trebui să fie semnat un contract și să fie achitată suma în avans pentru etapele de planificare. 4. Estimare Finală: Oferta Finală: Clarifică că oferta finală va fi ajustată pe baza etapei de planificare, și că aceasta include costuri și timp de livrare definite după finalizarea planificării. 5. Funcționalități Incluse: Descriere generală a funcționalităților care vor fi incluse în aplicație. 6. Estimare de Cost și Timp: Cost Total: Estimarea costului total pentru dezvoltarea aplicației, inclusiv TVA. Timp de Livrare: Estimarea timpului necesar pentru finalizarea dezvoltării, bazat pe complexitatea funcționalităților și resursele disponibile. Această ofertă este orientativă și poate fi ajustată în funcție de cerințele suplimentare sau modificările de specificație. Timpul și costurile finale vor fi stabilite în urma finalizării etapei de planificare.")
 
-crew = Crew(
-    agents=[professor_agent],
-    tasks=[task1],
-    verbose=2
-)
+    crew = Crew(
+                agents=[professor_agent],
+                tasks=[task1],
+                verbose=2
+            )
 
-result = crew.kickoff()
-print(result)
+    result = crew.kickoff()
+    return result
 
 wandb.finish()
 ```
 
-### 2. `training5.py`
+## Interfață Utilizator (UI) pentru Generatorul de Propuneri AI
+
+Scriptul `user_interface.py` creează o interfață grafică pentru utilizator (GUI) pentru Generatorul de Propuneri AI. Această interfață permite utilizatorilor să introducă detalii despre proiect și să primească o propunere detaliată generată de modelul AI. Interfața este construită folosind biblioteca `customtkinter`, care oferă un aspect modern și atrăgător.
+
+### Explicație pe scurt
+
+1. **Importarea Bibliotecilor și Configurarea Aspectului:** Se importă bibliotecile necesare și se configurează modul de afișare al interfeței.
+2. **Inițializarea Ferestrei Principale:** Se inițializează fereastra principală a aplicației și se setează titlul și dimensiunea acesteia.
+3. **Indicator de Încărcare:** Se creează un indicator de încărcare pentru a afișa utilizatorului când aplicația procesează cererea.
+4. **Actualizarea Zonei de Ieșire:** Se definește o funcție pentru a actualiza zona în care va fi afișată propunerea generată.
+5. **Definirea Funcției de Generare a Propunerii:** Se definește funcția care va prelua textul introdus de utilizator, va genera propunerea și o va afișa în interfață.
+
+### Codul complet pentru `user_interface.py`
+
+```python
+import customtkinter
+import customtkinter as ctk
+import tkinter
+from ai_trained_model import generate_proposal  # Import the generate_proposal function from main_logic.py
+import threading
+
+customtkinter.set_appearance_mode("dark")
+customtkinter.set_default_color_theme("green")
+
+# Initialize the main window
+app = ctk.CTk()
+
+# Set the title and size of the window
+app.title("AI Proposal Generator")
+app.geometry("500x400")
+
+loading_label = ctk.CTkLabel(app, text="Loading...", text_color="red", font=("Arial", 14))
+loading_label.pack_forget()
+
+def set_loading(is_loading):
+    if is_loading:
+        loading_label.pack(pady=5)
+    else:
+        loading_label.pack_forget()
+
+def update_output(proposal):
+    # Clear the existing output
+    for widget in output_frame.winfo_children():
+        widget.destroy()
+
+    output_label = ctk.CTkLabel(output_frame, text=proposal, wraplength=550, anchor="w", justify="left")
+    output_label.pack(pady=5, padx=5)
+
+# Define a function to display the generated proposal
+def display_text():
+    def run_generate_proposal():
+        user_text = entry.get()  # Get the text input from the user
+        set_loading(True)  # Show loading indicator
+        proposal = generate_proposal(user_text)  # Call the generate_proposal function with the user input
+        set_loading(False)  # Hide loading indicator
+        update_output(proposal)  # Display the result in the output label
+
+    # Run the proposal generation in a separate thread to avoid freezing the UI
+    threading.Thread(target=run_generate_proposal).start()
+
+# Label
+label = ctk.CTkLabel(app, text="Enter project details:", font=("Arial", 16))
+label.pack(pady=10)
+
+# Entry widget
+entry = ctk.CTkEntry(app, width=300)
+entry.pack(pady=10)
+
+# Button to submit
+button = ctk.CTkButton(app, text="Generate Proposal", command=display_text)
+button.pack(pady=10)
+
+# Output label title
+output_label_title = ctk.CTkLabel(app, text="The resulted output:", anchor="w", justify="left")
+output_label_title.pack(pady=10, padx=10, anchor="w")
+
+# Label to display the output
+output_frame = ctk.CTkScrollableFrame(app, width=550, height=300)
+output_frame.pack(pady=10, padx=10)
+
+# Run the application
+app.mainloop()
+```
+
+### 3. `training5.py`
 
 Acest script este folosit pentru antrenarea modelului AI utilizând datele de intrare și ieșire specificate. Este destinat să funcționeze pe o placă video cu memorie de 4GB.
 
@@ -199,7 +288,7 @@ model.config.use_cache = False
 trainer.train()
 ```
 
-### 3. `training.py` (Alternative)
+### 4. `training.py` (Alternative)
 
 Acest script alternativ este destinat utilizării pe o placă video mai puternică. Este similar cu `training5.py`, dar folosește argumente de antrenament diferite și mai simplificate.
 
@@ -261,7 +350,7 @@ except Exception as e:
 1. **Pregătirea Mediu**: Asigurați-vă că aveți toate bibliotecile necesare instalate. Puteți utiliza un mediu virtual sau conda pentru a gestiona dependențele.
 
 2. **Rularea Scripturilor**: Folosiți următoarele comenzi pentru a rula scripturile:
-   - Pentru utilizarea modelului antrenat: `python ai_trained_model.py`
+   - Pentru utilizarea modelului antrenat cu ajutorul unui UI (User Interface): `python user_interface.py`
    - Pentru antrenarea modelului cu `training5.py`: `python training5.py`
    - Pentru antrenarea modelului cu `training.py` (pentru plăci video mai puternice): `python training.py`
 
