@@ -18,6 +18,7 @@ Proiectul folosește Python pentru implementarea scripturilor de antrenare și g
 4. WandB
 WandB (Weights & Biases) este folosit pentru a monitoriza și vizualiza procesul de antrenare a modelului. Aceasta permite urmărirea metricilor și gestionarea artefactelor modelului într-un mod organizat.
 
+- **CustomTkinter**: Bibliotecă pentru crearea interfețelor grafice.
 - **CrewAI**: Utilizat pentru gestionarea agenților și sarcinilor în cadrul proiectului.
 - **PyTorch**: Utilizat pentru procesarea și antrenarea modelului AI.
 - **Datasets**: Utilizat pentru gestionarea și prelucrarea seturilor de date.
@@ -262,6 +263,7 @@ except Exception as e:
 
 2. **Rularea Scripturilor**: Folosiți următoarele comenzi pentru a rula scripturile:
    - Pentru utilizarea modelului antrenat: `python ai_trained_model.py`
+   - Pentru utilizarea modelului antrenat cu ajutorul unui UI (User Interface): `python ui.py`
    - Pentru antrenarea modelului cu `training5.py`: `python training5.py`
    - Pentru antrenarea modelului cu `training.py` (pentru plăci video mai puternice): `python training.py`
 
